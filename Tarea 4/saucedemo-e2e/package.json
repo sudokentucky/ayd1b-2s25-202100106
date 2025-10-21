@@ -1,0 +1,13 @@
+{
+  "name": "saucedemo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "cypress": "13.13.2",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "scripts": {
+    "cy:run": "cypress run --browser electron",
+    "report": "npx mochawesome-merge cypress/reports/*.json | npx marge --reportDir cypress/reports"
+  }
+}
